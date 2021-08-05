@@ -1,13 +1,13 @@
 import React from 'react';
 import classNames from 'classnames';
 
-function Button({onClick, className, outline, children}){
+function Button({ onClick, className, outline, children }) {
   return (
-    <button 
+    <button
       onClick={onClick}
       className={classNames('button', className, {
-      'button--outline': outline
-    })}>{children}</button>
+        'button--outline': outline
+      })}>{children}</button>
   );
 }
 
