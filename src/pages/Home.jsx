@@ -4,7 +4,7 @@ import { useSelector, useDispatch } from 'react-redux';
 import { Categories, SortPopup, PizzaBlock, PizzaLoadingBlock } from '../components';
 import { setCategory, setSortBy } from "../redux/actions/filters";
 import { fetchPizzas } from '../redux/actions/pizzas';
-import { addPizzaToCart } from '../redux/actions/cart';
+import { strAddPizza } from '../constants';
 
 const categoryNames = [
   'Мясные',
@@ -40,7 +40,7 @@ function Home() {
 
   const handleAddPizzaToCart = (obj) => {
     dispatch({
-      type: 'ADD_PIZZA_CART',
+      type: strAddPizza,
       payload: obj,
     });
   }
@@ -65,7 +65,7 @@ function Home() {
               <PizzaBlock
                 onClickAddPizza={handleAddPizzaToCart}
                 key={obj.id}
-                addedCount={cartItems[obj.id] && cartItems[obj.id].length}
+                addedCount={cartItems[obj.id] && cartItems[obj.id].items.length}
                 {...obj} />
             ))
             : Array(12).fill(0).map((_, index) => <PizzaLoadingBlock key={index} />)
