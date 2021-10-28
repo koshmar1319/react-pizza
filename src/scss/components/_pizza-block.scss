@@ -17,6 +17,8 @@
     font-size: 20px;
     font-weight: 900;
     letter-spacing: 1%;
+    margin: 0;
+    padding: 0;
     margin-bottom: 20px;
   }
 
@@ -68,5 +70,21 @@
     font-size: 22px;
     line-height: 27px;
     letter-spacing: 0.015em;
+  }
+}
+
+
+@media (max-width: 1500px){
+  .pizza-block {
+    margin: 0;
+    padding: 0;
+    margin: 10px;
+
+    &:not(:nth-of-type(4n)) {
+      margin: 0;
+      padding: 0;
+      margin-right: 0;
+      margin: 10px;
+    }
   }
 }

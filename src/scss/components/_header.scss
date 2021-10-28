@@ -30,3 +30,31 @@
     }
   }
 }
+
+
+@media (max-width: 630px){
+  .header {
+    &__logo {
+      max-width: 188px;
+    }
+    h1 {
+      font-size: 20px;
+    }
+    p {
+      font-size: 14px;
+    }
+  }
+}
+
+@media (max-width: 450px){
+  .header {
+    padding: 20px 0;
+
+    .container {
+      flex-direction: column;
+    }
+    &__cart {
+      margin-top: 20px;
+    }
+  }
+}

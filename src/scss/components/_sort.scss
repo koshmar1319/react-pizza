@@ -55,3 +55,22 @@
     }
   }
 }
+
+
+@media (max-width: 1300px){
+  .sort {
+    margin-top: 20px;
+  }
+}
+
+@media (max-width: 450px){
+  .sort {
+    
+    &__label {
+
+      b {
+        font-size: 14px;
+      }
+    }
+  }
+}
