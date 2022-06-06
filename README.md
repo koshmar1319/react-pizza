@@ -24,7 +24,7 @@
 2. Установите [Git](https://git-scm.com/ "ссылка на сайт Git")
 3. Скачайте архив данного репозитория или склонируйте себе при помощи команды:
 ```sh
-git clone https://github.com/koshmar1319/mesto.git
+git clone https://github.com/koshmar1319/react-pizza.git
 ```
 4. Установите все зависимости:
 ```sh
